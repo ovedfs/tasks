@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Quicksand:wght@300;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+  background-color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: orangered;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+h1 {
+  font-family: 'Merienda', cursive;
+}
+
+.task-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
+.task-form input,
+.task-form select {
+  font-size: 1em;
+  padding: 0.5em;
+  border: none;
+  margin-right: 0.25em;
+  border-radius: 0.25em;
+  outline: none;
+}
+
+.btn-add {
+  background-color: #222;
+  color: white;
+  width: 100px;
+  cursor: pointer;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+  padding: 1em;
+}
+
+.task {
+  min-height: 100px;
+  font-size: 1.5em;
+  padding: 1em;
+  border-radius: 0.25em;
+  position: relative;
+  max-width: 500px;
+}
+
+.btn-delete {
+  color: red;
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+  font-size: 0.75em;
+}
+
+.btn-delete:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.task-date {
+  position: absolute;
+  top: 0.5em;
+  right: 0.25em;
+  font-size: 0.5em;
+  color: gray;
+}
+
+@media (max-width: 600px) {
+  .task-form {
+    flex-direction: column;
+    gap: 1em;
+  }
+}

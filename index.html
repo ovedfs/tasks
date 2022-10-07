@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fa-solid fa-clipboard-list"></i> Mis Pendientes</h1>
+      <form class="task-form" id="task-form" action="#">
+        <input type="text" class="task-input" id="task-input" placeholder="Ingrese una tarea..." autofocus>
+        <select id="select-color">
+          <option value="#77DD77">Verde</option>
+          <option value="#99c5c4">Azul</option>
+          <option value="#fdfd96">Amarillo</option>
+          <option value="#bdb0d0">Lila</option>
+          <option value="#ff6961">Rojo</option>
+          <option value="#ffb7ce">Rosa</option>
+        </select>
+        <input type="submit" class="btn-add" id="btn-add" value="Agregar">
+      </form>
+    </header>
+    
+    <main class="task-list" id="task-list">
+      <!-- <div class="task" style="background-color: #77DD77;">
+        Ir al super
+      </div>
+      <div class="task" style="background-color: #99c5c4;">
+        Pasear al perro
+      </div>
+      <div class="task" style="background-color: #ffb7ce;">
+        Ir al super
+      </div>
+      <div class="task" style="background-color: #77DD77;">
+        Ir al super
+      </div>
+      <div class="task" style="background-color: #99c5c4;">
+        Pasear al perro
+      </div>
+      <div class="task" style="background-color: #ffb7ce;">
+        Ir al super
+      </div> -->
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
